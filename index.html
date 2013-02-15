@@ -1,0 +1,111 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta charset="utf-8">
+<!--set viewport height-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Law One</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/custom.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.2.0.min.js" type="text/javascript"></script>
+<!-- This reference to phonegap.js will allow for code hints as long as the current site has been configured as a mobile application. 
+	 To configure the site as a mobile application, go to Site -> Mobile Applications -> Configure Application Framework... 
+-->
+<script src="phonegap.js"></script>
+</head>
+
+<body> 
+
+<!--page one: login -->
+<div data-role="page" id="page1" data-fullscreen="true" class="login_screen">
+
+<div data-role="content">
+
+<form name="login" action="#" >
+   
+   <div data-role="fieldcontain">
+<!--   <label for="user-name-field">User Name</label>-->
+   		<input id="user-name" type="text" name="username" placeholder="User Name" />
+   </div>
+   
+   <div data-role="fieldcontain">
+<!--   	<label for="password-field">Password</label>-->
+   		<input id="password-field" type="password" name="password" title="Password" placeholder="Password" /> 
+   </div>
+   
+   <div data-role="fieldcontain" class="login-button"><a href="dashboard.html" data-role="button" rel="external" data-theme="b">Login</a> </div>       
+ 
+ </form>
+ 
+  </div>
+</div>
+
+<!--page two: dashboard
+<div data-role="page" id="dashboard">
+	
+        <div data-role="header" data-backbtn="false" data-position="fixed" data-fullscreen="true" style="background-image:url(icons/banner.png); background-size:100% 100%">
+         <hgroup style="">
+            <h1 align="right" style="font-weight:normal">Welcome</h1>
+            <h2 align="right"><a href="#">Logout</a> | <a href="#">Help</a> | <a href="#">Options</a></h2>
+        </hgroup>   
+        </div>
+    
+	<div data-role="content">
+    navigation
+		<div id="navigation" class="ui-content">
+		  <ul data-role="listview">
+          	<li><a href="#" rel="external">Activities</a><span class="ui-li-count">1</span></li>
+		    <li><a href="Files.html" rel="external">Files</a><span class="ui-li-count">1</span></li>
+		    <li><a href="Instructions.html" rel="external">Instructions</a><span class="ui-li-count">1</span></li>
+		    <li><a href="Approvals.html" rel="external">Approvals</a><span class="ui-li-count">1</span></li>
+		    <li><a href="Reports.html" rel="external">Reports</a></li>
+		    <li><a href="Calendar.html" rel="external">Calendar</a></li>
+		    <li><a href="Instructions.html#add" rel="external">Add Instruction</a></li>
+		    <li><a href="settings.html" rel="external">Settings</a></li>
+	      </ul>
+       
+        </div>	
+       
+    detail view
+        <div id="users" class="ui-content" >
+        	<table id="list">
+            	<tbody>
+                
+                </tbody>
+            </table>
+        </div>	
+
+	</div>
+</div>-->
+
+<!--
+extra pages
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Page Three</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Page Four</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+-->
+</body>
+</html>

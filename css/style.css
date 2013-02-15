@@ -1,0 +1,514 @@
+/* CSS Document */
+/* strech container*/
+html, body, .container {
+	height: 100%;
+}
+body > .container { height: auto; min-height: 100%; }
+
+div.clear { clear: both; }
+
+#header .ui-bar-a{
+	height:44px;
+	background-color:#3b86c4;	
+}
+
+.main_menu{
+	background-color:#3b86c4;
+	text-transform:uppercase;
+	padding:0px;
+}
+
+.main_menu #left_btn{
+	float:left;
+	width:25%;
+	margin-right:60%;
+}
+
+.main_menu #right_btn{
+	margin-left:60%;
+}
+
+/*hidden menu*/
+#hide-menu {
+	background-color:#372f2b;
+	padding: 5px;
+	margin-left: -55px;
+	
+}
+#hide-menu .nav-bar { list-style:none;}
+#hide-menu .nav-bar li {
+	display:inline;
+	padding: 0 10px;
+	border-left-color:#999999;
+	border-left-width: thin;
+	border-left-style: dashed;
+}
+
+#hide-menu .nav-bar li a {
+/*padding-left: 25px;  Create padding on the left where the icon goes */
+text-decoration: none;
+text-transform: uppercase;
+font-size:9px;
+font-weight: bold;
+font-family:Arial, Helvetica, sans-serif, "Myriad Pro";
+color: #FAFAFA;
+}
+
+#menu{
+	display:none;
+}
+#hide{
+	/*display:none;*/
+}
+
+/*icons
+.nav-bar .nav-button-dashboard a { background:url("#") no-repeat 0px -2px transparent; }
+.nav-bar .nav-button-files a { background: url(../icons/files.png) no-repeat 0px -2px transparent; }
+.nav-bar .nav-button-notifications a { background:url("#") no-repeat 0px -2px transparent; }
+.nav-bar .nav-button-activities a { background:url("#") no-repeat 0px -2px transparent; }
+.nav-bar .nav-button-contatcs a { background:url("#") no-repeat 0px -2px transparent; }
+*/
+
+
+/* side bar*/
+.navigation{
+	float:left;
+	width: 30%;
+	height:100%;
+	/*margin-left: 10px;*/
+	/*background:#E5E5E5;*/
+	border-right-width: medium;
+	border-right-style: solid;
+	border-right-color: #666;
+	display: block;
+	z-index: 0;
+	padding-bottom: 3em;
+	position: absolute;
+	/*padding-right: 10px;*/
+	margin-top: -15px;
+}
+
+.navigation #navbar{
+	padding-right:15px;
+	padding-top: 3px;
+	padding-left:15px
+}
+
+.navigation .ui-listview{
+	padding-right:15px;
+	padding-top: 3px;
+	padding-left:15px;
+}
+
+#detail{
+	background-color:#dadada;
+	display: block;
+	padding:10px 15px;
+	/* [disabled]margin:0px 10px 10px -10px; */
+	color: #3b86c4;
+	font-size: 9px;
+	margin-bottom: 15px;
+}
+
+#detail img{
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#detail hgroup{
+	font-size:10px;
+}
+
+.detail #user{
+	float:left;
+	margin-right:5px;
+	margin-left: -15px;
+	background-color: #999;
+}
+
+.detail #user_det{
+	float:right;
+	font-family: Arial, Helvetica, sans-serif, "Myriad Pro";
+	font-size: 5px;
+	display: block;
+	color: #3b86c4;
+}
+/*content*/
+.content{
+	float:right;
+	width:66.5%;
+	padding-bottom: 3em;
+	padding-right: 10px;
+	font-family: Arial, Helvetica, sans-serif, "Myriad Pro";
+}
+
+.content .ui-listview hgroup h1{
+	color:#3b86c4;
+	font-size:14px
+}
+
+.content .ui-listview hgroup h2{
+	color:#000;
+	font-size:12px
+}
+
+.content #notification{position:absolute;font-size:11px;font-weight:bold;padding:.2em .5em;top:50%;margin-top:-.95em;right:40px}
+
+.content .ui-li.ui-btn{
+	margin-top: -20px;
+	padding-left: 5px;
+}
+/* ~~ The footer ~~ */
+.footer {
+	/*height: 44px;*/
+	 clear: both;
+	 position: relative;
+	 z-index: 10;
+	 height: 2em;
+	 margin-top: -3em;
+	/*padding: 10px 0;
+	position: relative; this gives IE6 hasLayout to properly clear 
+	clear: both; /*
+	/* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* pop up panel */
+#popupPanel-popup {
+    right: 0 !important;
+    left: auto !important;
+}
+#popupPanel {
+    width: 500px;
+    border: 1px solid #000;
+    border-right: none;
+    background-color: #DADADA;
+	background: -webkit-gradient(linear, left top, left bottom, from(#E9E9E9), to(#DADADA));
+	background: -moz-linear-gradient(top, #E9E9E9, #DADADA);
+    margin: -1px 0;
+	margin-right: 1px;
+	padding-top:2em;
+	padding-right: 1em;
+	font-size:14px;
+	font-weight:bold;
+}
+#popupPanel .ui-btn {
+	margin-left: 15px;
+	
+	
+}
+
+#popupPanel .ui-listview{
+	margin:-15px;
+}
+
+#title{
+	padding:10px 10px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #999;	
+}
+
+#title hgroup h1{
+	color:#3b86c4;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#title hgroup h2{
+	color:#000;
+	font-size:10px
+}
+
+#partner{
+	font-family:Arial, Helvetica, sans-serif, "Myriad Pro";
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+
+#partner h5{
+	font-size:12px;
+	font-weight:normal;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #999;
+}
+
+#partner h4{
+	font-weight:normal;
+	font-size:12px;
+	
+}
+
+.recordset .ui-btn-right .ui-btn-text{
+	color:#FFF;
+}
+
+.recordset .ui-btn-right{
+	margin:10px;
+}
+/*.recordset styling*/
+.recordset {
+	border-collapse:collapse;
+	text-align:left;
+	width: 500px;
+	
+	/*color: #606060;*/
+}
+ 
+/*** .recordset's thead section, head row style ***/
+.recordset thead tr td  {
+	background-color: White;
+	vertical-align:middle;
+	padding: 0.6em;
+	font-size:0.8em;
+}
+
+/*** .recordset's thead section, coulmns header style ***/
+.recordset thead tr th
+{
+	 padding: 0.5em;
+     /* add gradient */
+	 background-color: #808080;
+	 background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#909090));
+	 background: -moz-linear-gradient(top, #606060, #909090);
+     
+}
+
+.recordset tbody tr{
+	height: 20px
+}
+ 
+/*** .recordset's tbody section, odd rows style ***/
+.recordset tbody tr:nth-child(odd) {
+	background-color: #fafafa;
+	color: #333131;
+}
+ 
+ /*** hover effect to .recordset's tbody odd rows ***/
+.recordset tbody tr:nth-child(odd):hover{
+	cursor:pointer;
+	/* add gradient */
+	font-weight:bold;
+    background-color: #DADADA;
+	background: -webkit-gradient(linear, left top, left bottom, from(#E9E9E9), to(#DADADA));
+	background: -moz-linear-gradient(top, #E9E9E9, #DADADA);
+}
+ 
+/*** .recordset's tbody section, even rows style ***/
+.recordset tbody tr:nth-child(even) {
+	background-color: #efefef;
+	color: #333131;
+}
+ 
+ /*** hover effect to apply to .recordset's tbody section, even rows ***/
+.recordset tbody tr:nth-child(even):hover{
+	cursor:pointer;
+	/* add gradient */
+	font-weight:bold;
+	background-color: #DADADA;
+	background: -webkit-gradient(linear, left top, left bottom, from(#E9E9E9), to(#DADADA));
+	background: -moz-linear-gradient(top, #E9E9E9, #DADADA);
+	
+}
+ 
+/*** .recordset's tbody section, last row style ***/
+.recordset tbody tr:last-child {
+	border-bottom: solid 1px #404040;
+}
+ 
+/*** .recordset's tbody section, separator row pseudo-class ***/
+.recordset tbody tr.separator {
+/* add gradient */
+	background-color: #808080;
+	background: -webkit-gradient(linear, left top, left bottom, from(#606060), to(#909090));
+	background: -moz-linear-gradient(top, #606060, #909090);
+	color: #dadada;
+        }
+		
+/* verticle border*/
+.recordset tbody tr td:first-child {
+	border-right-width: thin;
+	border-right-style: solid;
+	border-right-color: #CCC;
+}
+
+/*** .recordset's td element, all section ***/
+.recordset td {
+	/*line-height:15px;*/
+	text-align:justify;
+}
+
+.recordset td h5{
+	color: #3b86c4;
+	font-size:12px;
+}
+
+
+/*** .recordset's tfoot section ***/
+.recordset tfoot{
+	text-align:center;
+	color:#303030;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.3);
+}
+
+
+
+#page1 .ui-content{
+	margin: 0 auto;
+	background: #fefefe;
+	position: absolute;
+	top: 28%;
+	left: 30%;
+	/*left:30%;
+	right:30%;
+	top:20%;*/
+	/* [disabled]bottom:30%; */
+	width:380px;
+	height:205px;
+	text-align:center;
+	
+	/*cureved coners*/
+	/*-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;*/
+	border-radius: 8px;
+	/*background image
+	background:#f0f0f0;*/
+	/*background-image:-moz-linear-gradient(top, #eee, #ddd);
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(1, #ddd));
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#dddddd')";
+	color: #252525;*/
+}
+
+#login label{
+	font-size:24px;
+	font-weight:100	
+}
+
+#login input{
+	color:#484848;
+}
+
+/*hgroup{
+	font-size:12px;
+	font-weight: normal;
+	line-height: 70%;
+	margin-right: 20px;
+}
+*/
+
+
+/*count*/
+.ui-count {
+	color:#6E6E6E;
+	font-size:11px;
+	font-weight:bold;
+	padding:.2em .5em;
+	top:50%;
+	margin-top:-.9em;
+	border: thin solid #CCC;
+	background-color:#CCC;
+	/*cureved coners*/
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;	
+}
+
+.ui-icon-myapp-star {
+	background-image: url(../icons/star.jpg);
+}
+
+/*New styles*/
+
+/*Login background*/
+
+#page1{
+	background: #abcedf url('../images/bg_blue_white_lines.jpg') repeat top left;
+}
+
+/*Login input field */
+
+#page1 #password-field, #user-name{
+	width: 211px;
+	height: 36px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 0px #fff;
+	border: 1px solid #89c7ef;
+	font: 100 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #555;
+	background: #f3f8fc url('../icons/user_login.png') no-repeat;
+	background-position: 10px 10px;
+/*	text-indent: 30px;*/
+	padding-left: 35px;
+}
+
+/*icon for password field*/
+
+#page1 #password-field{
+	background: #f5f5f5 url('../icons/key.png') no-repeat;
+	background-position: 10px 10px;
+	
+}
+/*All placeholders*/
+
+::-webkit-input-placeholder {
+   color: #888;
+   font: 100 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+/*   text-indent: 30px;*/
+   
+}
+
+/*Disappear on focus*/
+
+:focus::-webkit-input-placeholder{color:transparent;}
+
+.login-button {
+	width: 211px;
+	height: 36px;
+	margin-left: 40px;
+}
+/*login white box*/
+
+#page1 .ui-content{
+	background: #fefefe;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width:380px;
+	height:206px;
+	margin-left: -190px;
+	margin-top:-103px ;
+	text-align:center;
+	border-radius: 8px;
+	box-shadow: 2px 2px 3px #555;
+}
+
+#login label{
+	font-size:24px;
+	font-weight:100	
+}
+
+/*#login input{
+	color:#ff0000;
+}*/
+
+
+
+
+
+
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.ui-icon-myapp-star {
+		background-image: url(../icons/star.jpg);
+		background-size: 18px 18px;
+	}
+	/*...more HD icon rules go here...
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:2),screen and (max--moz-device-pixel-ratio:2)
+{
+#navbar{
+	font-size:10px;
+}
+}
+*/
